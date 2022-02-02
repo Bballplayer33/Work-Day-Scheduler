@@ -17,10 +17,12 @@ var buttonArray = $(".saveBtn");
  for (let i = 0; i < buttonArray.length; i++) {
      //console.log(buttonArray[i]);
      var storageHr = i + 9  
-     var savedLocal = localStorage.getItem("#hr" + storageHr); 
+     var savedLocal = localStorage.getItem("#hr" + storageHr);
      var inputArea = "#hr" + storageHr    
     $(inputArea).val(savedLocal)
      console.log(localStorage.getItem("#hr" + storageHr));
+
+
      $(buttonArray[i]).click(function(event) {
          event.preventDefault();
         console.log(event.target.value);
